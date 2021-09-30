@@ -5,7 +5,8 @@ const Card = (props) => {
     return(
         <div className={classes.card}>
             <p className={classes.title}>{props.title}</p>
-            <hr></hr>
+            <hr className={classes.linebreak}></hr>
+            {props.children}
         </div>
     )
 };

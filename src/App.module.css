@@ -1,5 +1,6 @@
 .card
 {
   display: flex;
-  margin: 50px;
+  margin: 50px 20px 0 20px;
+  justify-content: center;
 }
