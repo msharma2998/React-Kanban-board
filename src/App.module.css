@@ -3,4 +3,5 @@
   display: flex;
   margin: 50px 20px 0 20px;
   justify-content: center;
+  height: 100%;
 }

@@ -7,7 +7,8 @@
     padding: 15px;
     text-align: center;
     background-color: rgb(250, 253, 253);
-    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    box-shadow: rgb(204, 219, 232) 3px 3px 10px 0px inset,rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset ;
+    
 }
 
 .title
@@ -20,5 +21,8 @@
 
 .linebreak
 {
-    margin-bottom: 20px;
+    margin: 10px 10px 20px 10px;
+    border: none;
+    background-color: #0a070736;
+    height: 1px;
 }

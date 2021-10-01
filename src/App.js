@@ -1,19 +1,18 @@
 import Card from './Card';
-import Task from './Task';
+import { tasks, columns } from './repo/data';
 import classes from './App.module.css';
+import React, { useState } from 'react';
 
 const App = () => {
+  const[enteredcolumns, setEnteredcolumns] = useState(columns);
+
   return (
     <div className={classes.card}>
-        <Card title="To Do">
-          <Task title="Document Requiremnets"></Task>
-          <Task title="Design the UI"></Task>
-          <Task title="Design the database"></Task>
-          <Task title="Start implementation of the design features"></Task>
-        </Card>
-        <Card title="In Progress"></Card>
-        <Card title="Testing"></Card>
-        <Card title="Completed"></Card>
+        {Object.entries(enteredcolumns).map(([id, column]) => {
+          return(
+            <Card title={column.title} tasks={column.tasks}></Card>
+          )
+        })}
     </div>
     
   );
