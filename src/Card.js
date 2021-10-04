@@ -10,7 +10,7 @@ const Card = (props) => {
             <hr className={classes.linebreak}></hr>
             <Droppable droppableId = {props.id}>
             {(provided) => (
-                <div 
+                <div className={classes.wrapperdiv}
                     ref = {provided.innerRef}
                     {...provided.droppableProps} 
                 >
